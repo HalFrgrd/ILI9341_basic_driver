@@ -4,12 +4,12 @@
 
 
 // Pin outs
-#define TFT_DC 8
-#define TFT_CS 10
+#define TFT_DC 9
+#define TFT_CS 7
 #define TFT_MOSI 16
 #define TFT_CLK 15
-#define TFT_RST 7
-#define TFT_MISO 14
+#define TFT_MISO 19
+#define TFT_RST 8
 #define TFT_LED 18
 
 #define ILI9341_TFTWIDTH 320  ///< ILI9341 max TFT width
@@ -262,7 +262,7 @@ void ILI9341_init(){
   ILI9341_send_command(0x29);
 
   //STARTING ROTATION
-  ILI9341_set_rotation(SCREEN_HORIZONTAL_1);  
+  ILI9341_set_rotation(SCREEN_VERTICAL_2);  
   
 }
 
